@@ -1,6 +1,8 @@
 body
 {
     overflow-x: hidden;
+    margin: auto;
+    padding: auto;
 }
 html 
 {
@@ -684,6 +686,6 @@ color: white;
 {
     .thirteen 
     {
-        margin-left: -130px;
+        margin-left: -50px;
     }
 }
