@@ -407,6 +407,7 @@ img {
 {
     font-size: 20px;
 }
+
 .mo
 {
     background-color: lawngreen;
@@ -417,12 +418,23 @@ img {
     background-color: gray;
     color: white;
 }
+
 .sixth a 
 {
     border: 1px solid black;
     padding: 20px;
     font-size: 20px;
     text-decoration: none;
+}
+@media (max-width: 666px) 
+{
+    .sixth a 
+    {
+        border: 1px solid black;
+        padding: 10px;
+        font-size: 20px;
+        text-decoration: none;
+    }
 }
 .wood 
 {
