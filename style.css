@@ -1,0 +1,689 @@
+body
+{
+    overflow-x: hidden;
+}
+html 
+{
+    scroll-behavior: smooth;
+}
+@media (max-width: 666px) 
+{
+html, body
+    {
+        overflow-x: hidden;
+    }
+html 
+    {
+        scroll-behavior: smooth;
+    }
+}
+.main {
+    background-color: brown;
+}
+
+.main a {
+    text-decoration: none;
+}
+@media (max-width: 666px) 
+{
+    .main
+    {
+        width: 100%;
+    }
+}
+
+.first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.bars-container {
+    display: none;
+    cursor: pointer;
+}
+
+.bars {
+    display: none;
+}
+
+.in {
+    flex: 1;
+}
+
+.in ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.out 
+{
+    display: flex;
+}
+.out li
+{
+    list-style-type: none;
+}
+
+.bars:checked ~ .out {
+    display: flex; 
+}
+
+.out a {
+    color: white;
+}
+
+.out li {
+    margin-right: 15px;
+}
+
+.out li:last-child {
+    margin-right: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 666px) {
+    .first {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .bars-container {
+        display: block;
+    }
+
+    .out 
+    {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 50px;
+        left: 1 ;
+        width: 90%;
+        background-color: black;
+        padding: 10px;
+    }
+
+    .bars-container:checked ~ .out {
+        display: flex;
+    }
+}
+
+.aro input[type="text"] {
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 5px 0;
+    outline: none;
+}
+.second
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px;
+}
+.insd a
+{
+    color: white;
+}
+.insd ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px; 
+}
+
+.insd ul
+{
+    display: flex;
+    
+}
+.insd ul
+{
+    list-style-type: none;
+}
+@media (max-width: 666px) 
+{
+    .insd ul 
+    {
+        display: grid;
+    }
+}
+
+.aro {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.aro li {
+    margin-right: 15px;
+}
+
+.aro li:last-child 
+{
+    margin-right: 0;
+}
+.aro i 
+{
+    color: white;
+}
+.gif
+{
+    display: flex;
+    justify-content: center;
+   background-image: linear-gradient(to bottom, #cc3535, #e1204f, #f2006e, #fc0093, #fd00bd, #fe00bb, #fe00b9, #ff00b7, #ff008a, #ff155f, #ff4237, #ef6100);background-image: linear-gradient(to bottom, #cc3535, #d72f40, #e1284c, #eb1f59, #f41467, #f81665, #fb1862, #ff1b60, #ff2e4d, #fd4039, #f75123, #ef6100);
+}
+.gif p
+{
+    font-size: 20px;
+    
+}
+@media (max-width: 666px) 
+{
+    .gif p
+    {
+        font-size: 21px;
+    }
+}
+.super
+{
+    background-image: url('https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/india/2023/Rakhi-homepage-banner2.jpg?$responsive$&cropPathE=desktop&fit=stretch,1&wid=1920');
+    background-size: cover;
+    padding: 80px;
+}
+.third
+{
+    margin-left: 90px;
+}
+
+.third h2
+{
+    font-size: 35px;
+}
+.third a 
+{
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+@media (max-width: 666px) 
+{
+    .third
+    {
+        
+        margin-left: -60px;
+
+    }
+    .third h1
+    {
+        font-size: 40px;
+    }
+    .third h2
+    {
+        font-size: 30px;
+    }
+    .third p 
+    {
+        font-size: 22px;
+    }
+    .super
+    {
+        background-image: url('bangkit-prayogi-B0k9iH3c9HU-unsplash.jpg');
+    }
+}
+.shp
+{
+    background-color: lawngreen;
+    color: black;
+}
+.blk
+{
+    background-color: gray;
+    color: white;
+}
+.fourth
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-left: 170px;
+}
+.fourth div
+{
+
+    border: 1px solid black;
+    width: 70%;
+    padding: 10px;
+}
+.fourth a
+{
+    text-decoration: none;
+}
+
+@media (max-width: 666px) 
+{
+    .fourth
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 0px;
+        width: 100%;
+    }
+    .fourth div
+    {
+        margin-bottom: 20px;
+        padding: 20px;
+    }    
+}
+.brand h1
+{
+    display:  flex;
+    justify-content: center;
+}
+.apsra
+{
+    background-image: url('https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/india/2023/Gift-banner-4.jpg?$responsive$&cropPathE=desktop&fit=stretch,1&wid=1920');
+    background-size: cover;
+    padding: 10%;
+}
+.nippo
+{
+    margin-left: 30px;
+    color: white;
+}
+@media (max-width: 666px) 
+{
+    .apsra {
+        background-image: url('https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/india/2023/Gift-banner-4.jpg?$responsive$&cropPathE=mobile&fit=stretch,1&wid=666');
+        background-size: cover;
+        padding: 10%;
+    }
+
+    .nippo 
+    {
+        margin-left: 0px;
+        color: gold;
+    }
+}
+.del
+{
+    margin-left: 160px;
+}
+@media (max-width: 666px) 
+{
+    .del
+    {
+        margin-left: 40px;
+    }
+}
+.fifth
+{
+    margin-left: 160px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.fifth img
+{
+    width: 90%;
+    border: 2px solid black;
+}
+@media (max-width: 666px) 
+{
+    .fifth
+    {
+        margin-left: 0px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .fifth div
+    {
+        margin-bottom: 40px;
+    }
+}
+.mi
+{
+    padding: 24px;
+    background-color: lawngreen;
+    border: 2px solid black;
+}
+.remote
+{
+    display: flex;
+    justify-content: center;
+    background-color: #009AD5;
+}
+
+.remote a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+@media (max-width: 666px) 
+{
+    .remote p
+    {
+        margin-left: 40px;
+    }
+}
+.ok {
+    background-image: url('https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/leap-petite-global/products/floorcare/sticks/v12-detected-slim/overview/refresh/Hero-Pet-Science-banner-V12-3.jpg?$responsive$&cropPathE=desktop&fit=stretch,1&wid=1920');
+    background-size: cover;
+    padding: 10%;
+}
+
+@media (max-width: 666px) {
+    .ok {
+        background-image: url('pexels-moose-photos-1037992.jpg');
+        background-size: cover;
+        padding: 10%;
+    }
+}
+.sixth
+{
+    margin-left: 10px;
+}
+.sixth h2
+{
+    font-size: 35px;
+}
+.sixth p 
+{
+    font-size: 20px;
+}
+.mo
+{
+    background-color: lawngreen;
+    color: black;
+}
+.use
+{
+    background-color: gray;
+    color: white;
+}
+.sixth a 
+{
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.wood 
+{
+    display: flex;
+    justify-content: center;
+    
+}
+@media (max-width: 666px) {
+    .wood
+    {
+        font-size: 16px;
+    }
+}
+.note
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-left: 165px;
+}
+.note img
+{
+    width: 80%;
+}
+.note a
+{
+    text-decoration: none;
+}
+.note i 
+{
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 15px;
+}
+@media (max-width: 666px) {
+    .note
+    {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 20px;
+    }
+    .note img
+{
+    width: 100%;
+}
+}
+.cable
+{
+    margin-left: 160px;
+}
+@media (max-width: 666px) {
+    .cable 
+    {
+        margin-left: 0px;
+        font-size: 15px;
+    }
+}
+.seventh
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 165px;
+}
+.seventh img
+{
+    width: 90%;
+}
+.seventh i 
+{
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 15px;
+}
+.seventh a
+{
+    text-decoration: none;
+}
+@media (max-width: 666px) {
+    .seventh
+    {
+        margin-left: 20px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .seventh img
+{
+    width: 100%;
+}
+}
+.eight
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-left: 170px;
+}
+.eight img
+{
+    width: 80%;
+}
+.eight i 
+{
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 15px;
+}
+.eight a
+{
+    text-decoration: none;
+}
+@media (max-width: 666px) 
+{
+    .eight
+    {
+        margin-left: 20px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    .eight img
+    {
+        width: 100%;
+    }
+}
+.nine
+{
+    padding: 2%;
+    margin-left: 140px;
+}
+.nine p 
+{
+font-size: 14px;
+}
+@media (max-width: 666px) 
+{
+    .nine
+    {
+        margin-left: 0px;
+    }
+}
+.ten
+{
+    padding: 1%;
+    margin-left: 140px;
+}
+.ten p 
+{
+    font-size: 22px;
+}
+@media (max-width: 666px) 
+{
+    .ten
+    {
+        margin-left: 0px;
+    }
+}
+.eleven {
+    display: flex; 
+    color: white;
+    background-color: #333333;
+}
+
+.roll {
+    flex: 1; 
+    padding: 20px;
+
+    margin-left: 135px;
+}
+
+.draw {
+    flex: 1; 
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: flex-end; 
+    padding: 20px;
+
+    
+}
+.draw i 
+{
+    font-size: 40px;
+    color: white;
+}
+
+.draw p {
+    margin: 5px 0; 
+}
+
+.draw a {
+    margin-right: 10px; 
+}
+@media (max-width: 666px) 
+{
+    .eleven {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .roll {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .draw {
+        flex-direction: column; 
+        align-items: center;
+        padding: 20px;
+    }
+
+    .draw div {
+        margin-bottom: 15px;
+    }
+
+    .draw i {
+        font-size: 30px; 
+    }
+}
+
+.vin
+{
+    background-color: black;
+}
+.twelve
+{
+display: flex;
+justify-content: center;
+margin: 20px;
+justify-content: space-evenly;
+padding: 20px;
+}
+.twelve img
+{
+    width: 30px;
+}
+.twelve div a 
+{
+    margin-bottom: 10px; 
+    display: block; 
+    text-decoration: none;
+    color: white;
+}
+    @media (max-width: 666px) 
+    {
+        .twelve
+        {
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            padding: 0px;
+        }
+    }
+.thirteen
+{
+    display: flex;
+justify-content: center;
+padding: 1%;
+color: white;
+}
+@media (max-width: 666px) 
+{
+    .thirteen 
+    {
+        margin-left: -130px;
+    }
+}
