@@ -18,6 +18,7 @@ html
     {
         scroll-behavior: smooth;
     }
+
 }
 .main {
     background-color: brown;
@@ -130,7 +131,6 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 10px;
 }
 .insd a
@@ -267,38 +267,56 @@ img {
     background-color: gray;
     color: white;
 }
-.fourth
-{
+.fourth {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    margin-left: 170px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
 }
-.fourth div
-{
 
-    border: 1px solid black;
-    width: 70%;
-    padding: 10px;
+.fourth div {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
 }
-.fourth a
-{
+
+.fourth a {
     text-decoration: none;
+    color: inherit;
 }
 
-@media (max-width: 666px) 
-{
-    .fourth
-    {
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        margin-left: 0px;
-        width: 100%;
+.fourth p {
+    margin: 0;
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 16px;
+    color: #666666;
+}
+
+@media (max-width: 666px) {
+    .fourth {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px;
     }
-    .fourth div
-    {
-        margin-bottom: 20px;
-        padding: 20px;
-    }    
+
+    .fourth div {
+        padding: 15px;
+    }
 }
 .brand h1
 {
@@ -341,35 +359,94 @@ img {
         margin-left: 40px;
     }
 }
-.fifth
-{
-    margin-left: 160px;
+
+.fifth {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    max-width: 1200px;
+    gap: 20px;
 }
-.fifth img
-{
-    width: 90%;
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.card img {
+    width: 70%;
     border: 2px solid black;
+    border-radius: 10px;
 }
-@media (max-width: 666px) 
+
+.card p {
+    margin: 10px 0;
+}
+
+.price {
+    color: #ff0000; /* Red color for price */
+    font-weight: bold;
+}
+
+.discounted-price {
+    color: #008000; /* Green color for discounted price */
+    font-weight: bold;
+}
+
+.shop-now {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue color for button */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.shop-now:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+@media(max-width:730px)
 {
-    .fifth
-    {
-        margin-left: 0px;
+    .fifth {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
-    }
-    .fifth div
-    {
-        margin-bottom: 40px;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 auto;
+
+        gap: 20px;
     }
 }
+@media(max-width:517px)
+{
+    .fifth {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+
+        gap: 20px;
+    }
+}
+@media(max-width:375px)
+{
+    .fifth {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 auto;
+
+        gap: 20px;
+    }
+}
+
 .mi
 {
-    padding: 24px;
+    padding: 17px;
     background-color: lawngreen;
     border: 2px solid black;
+    border-radius: 50px;
 }
 .remote
 {
@@ -459,55 +536,63 @@ img {
         font-size: 16px;
     }
 }
-.note
-{
+.note {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    margin-left: 165px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
 }
-.note img
-{
-    width: 80%;
+
+.note img {
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-.note a
-{
-    text-decoration: none;
+
+.note p {
+    margin: 10px 0;
 }
-.note i 
-{
+
+.note i {
     font-size: 20px;
     border: 2px solid black;
     border-radius: 50%;
     padding: 15px;
+    margin-right: 10px;
 }
-@media (max-width: 666px) {
-    .note
-    {
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        margin-left: 20px;
+
+.note a {
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 734px) {
+    .note {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 0;
     }
-    .note img
-{
-    width: 100%;
 }
+
+@media (max-width: 478px) {
+    .note {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 0;
+    }
 }
 .cable
 {
-    margin-left: 160px;
+    display: flex;
+    justify-content: center;
 }
-@media (max-width: 666px) {
-    .cable 
-    {
-        margin-left: 0px;
-        font-size: 15px;
-    }
-}
+
 .seventh
 {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    margin-left: 165px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+
 }
 .seventh img
 {
@@ -536,110 +621,114 @@ img {
     width: 100%;
 }
 }
-.eight
-{
+.eight {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    margin-left: 170px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 1rem;
+
 }
-.eight img
-{
-    width: 80%;
+
+.eight img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-.eight i 
-{
+
+.eight p {
+    margin: 10px 0;
+}
+
+.eight i {
     font-size: 20px;
     border: 2px solid black;
     border-radius: 50%;
-    padding: 15px;
+    padding: 10px;
+    margin-right: 10px;
 }
-.eight a
-{
+
+.eight a {
     text-decoration: none;
+    color: black;
 }
-@media (max-width: 666px) 
-{
-    .eight
-    {
+@media (max-width: 793px) {
+    .eight {
         margin-left: 20px;
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        
+        grid-template-columns: repeat(3, 1fr);
     }
-    .eight img
-    {
-        width: 100%;
+}
+@media (max-width: 633px) {
+    .eight {
+        margin-left: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 417px) {
+    .eight {
+        margin-left: 20px;
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 .nine
 {
-    padding: 2%;
-    margin-left: 140px;
+    display: flex;
+    justify-content: center;
 }
-.nine p 
-{
-font-size: 14px;
-}
-@media (max-width: 666px) 
-{
-    .nine
-    {
-        margin-left: 0px;
+@media (max-width: 806px) {
+    .nine {
+        padding: 10px; /* Add padding */
     }
 }
+
 .ten
 {
-    padding: 1%;
-    margin-left: 140px;
+    display: flex;
+    justify-content: center;
+
 }
-.ten p 
-{
-    font-size: 22px;
-}
-@media (max-width: 666px) 
-{
-    .ten
-    {
-        margin-left: 0px;
+@media (max-width: 947px) {
+    .ten {
+        padding: 10px; /* Add padding */
     }
 }
 .eleven {
-    display: flex; 
+    display: flex;
     color: white;
     background-color: #333333;
+    padding: 20px;
 }
 
 .roll {
-    flex: 1; 
+    flex: 1;
     padding: 20px;
-
     margin-left: 135px;
 }
 
 .draw {
-    flex: 1; 
-    display: flex; 
+    flex: 1;
+    display: flex;
     justify-content: space-evenly;
-    align-items: flex-end; 
+    align-items: flex-end;
     padding: 20px;
-
-    
 }
-.draw i 
-{
+
+.draw i {
     font-size: 40px;
     color: white;
+    margin-right: 10px;
 }
 
 .draw p {
-    margin: 5px 0; 
+    margin: 5px 0;
+    font-size: 16px;
 }
 
 .draw a {
-    margin-right: 10px; 
+    color: white;
+    text-decoration: none;
 }
-@media (max-width: 666px) 
-{
+
+@media (max-width: 915px) {
     .eleven {
         flex-direction: column;
         align-items: center;
@@ -652,20 +741,16 @@ font-size: 14px;
     }
 
     .draw {
-        flex-direction: column; 
+        flex-direction: column;
         align-items: center;
         padding: 20px;
     }
 
-    .draw div {
-        margin-bottom: 15px;
-    }
-
     .draw i {
-        font-size: 30px; 
+        font-size: 30px;
+        margin-bottom: 10px;
     }
 }
-
 .vin
 {
     background-color: black;
