@@ -126,61 +126,108 @@ img {
     padding: 5px 0;
     outline: none;
 }
-.second
-{
+
+
+
+
+.navbar {
+    background-color: #333;
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
 }
-.insd a
-{
-    color: white;
-}
-.insd ul {
+
+.nav-items ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 15px; 
 }
 
-.insd ul
-{
-    display: flex;
-    
-}
-.insd ul
-{
-    list-style-type: none;
-}
-@media (max-width: 666px) 
-{
-    .insd ul 
-    {
-        display: grid;
-    }
-}
-
-.aro {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.aro li {
+.nav-items li {
     margin-right: 15px;
 }
 
-.aro li:last-child 
-{
+.nav-items a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.nav-items a:hover {
+    background-color: #555;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-button {
+    padding: 5px 10px;
+    background-color: #555;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.search-button:hover {
+    background-color: #333;
+}
+
+.search-cart ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.search-cart li {
+    margin-right: 15px;
+}
+
+.search-cart li:last-child {
     margin-right: 0;
 }
-.aro i 
-{
+
+.search-cart i {
     color: white;
 }
+
+/* Media queries for responsiveness */
+@media (max-width: 819px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-items ul,
+    .search-cart ul {
+        flex-direction: column;
+    }
+
+    .nav-items li,
+    .search-cart li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .search-cart .search-input {
+        width: 100%;
+    }
+}
+
+
 .gif
 {
     display: flex;
@@ -524,16 +571,19 @@ img {
         text-decoration: none;
     }
 }
-.wood 
+.wood
 {
     display: flex;
     justify-content: center;
-    
 }
-@media (max-width: 666px) {
+@media screen and (max-width: 900px) {
     .wood
     {
-        font-size: 16px;
+        padding: 1rem;
+    }
+    .wood h2 {
+
+        font-size: 1.5em; /* Adjust the font size as needed */
     }
 }
 .note {
@@ -584,6 +634,16 @@ img {
 {
     display: flex;
     justify-content: center;
+}
+@media screen and (max-width: 900px) {
+    .cable
+    {
+        padding: 1rem;
+    }
+    .cable h2 {
+
+        font-size: 1.5em; /* Adjust the font size as needed */
+    }
 }
 
 .seventh
